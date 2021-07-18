@@ -3,8 +3,8 @@ module TybTickets
   # A nejaky pokus
   class Ticket < ApplicationRecord
     # A relace
-    belongs_to :ticket_status
-    belongs_to :member
+    belongs_to :ticket_status, required: false
+    belongs_to :member, required: false
 
     ##
     # Get closed tickets

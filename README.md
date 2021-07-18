@@ -1,9 +1,6 @@
 # TybTickets
 Short description and motivation.
 
-## Usage
-How to use my plugin.
-
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -21,8 +18,14 @@ Or install it yourself as:
 $ gem install tyb_tickets
 ```
 
-## Contributing
-Contribution directions go here.
+## Setting
+Create migration and migrate
+```bash
+$ rails g tyb_ticket:install
+```
+
+## Usage
+How to use my plugin.
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
