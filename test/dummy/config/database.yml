@@ -1,0 +1,34 @@
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: tyb
+
+
+  username: root
+  password:
+  host: localhost
+  port: 3306
+  ssl_mode: :disabled
+  sslverify: false
+
+test:
+  <<: *default
+  database: tyb_test
+
+#
+production:
+  <<: *default
+  database: tyb
+
+  username: root
+  password:
+  host: localhost
+  port: 3306
+  ssl_mode: :disabled
+  sslverify: false

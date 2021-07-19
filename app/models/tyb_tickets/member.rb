@@ -1,3 +1,5 @@
+require './tyb_tickets/app/models/tyb_tickets/application_record'
+puts Dir.pwd
 module TybTickets
   class Member < ApplicationRecord
     ##

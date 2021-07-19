@@ -24,6 +24,11 @@ Create migration and migrate
 $ rails g tyb_ticket:install
 ```
 
+Generate some testing data
+```bash
+$ rails g tyb_ticket:seeds
+```
+
 ## Usage
 How to use my plugin.
 
