@@ -21,19 +21,13 @@ Součástí řešení bude i popis, jak knihovnu použít.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tyb_tickets'
+gem 'tyb_tickets', git: 'https://github.com/TiborStuchlik/tyb_tickets.git'
 ```
 
 And then execute:
 ```bash
 $ bundle
 ```
-
-Or install it yourself as:
-```bash
-$ gem install tyb_tickets
-```
-
 ## Setting
 Create migration and migrate
 
