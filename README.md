@@ -84,7 +84,7 @@ class TicketsController < ApplicationController
     when 'add_member'
       TybTickets.add_member(params[:member_email])
     when 'add_ticket_status'
-      TybTickets.add_ticketStatus(params[:ticket_status_name])
+      TybTickets.add_ticket_status(params[:ticket_status_name])
     when 'add_ticket'
       TybTickets.add_ticket(params[:member],params[:customer_email],params[:description])
     when 'close_ticket'
