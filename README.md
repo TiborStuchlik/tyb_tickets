@@ -53,11 +53,11 @@ $ rails g tyb_ticket:seeds
 
 Plugin obsahuje základní metody pro manipulaci s objekty:
 ```ruby 
-TybTickets.addMember( email) # přidá nového člena jménem/emailem
-TybTickets.addTicketStatus( name) # přidá nový typ výsledek uzavření tiketu
+TybTickets.add_member( email) # přidá nového člena jménem/emailem
+TybTickets.add_ticket_status( name) # přidá nový typ výsledek uzavření tiketu
 
-TybTickets.addTicket( member_id, customer_email, description)
-TybTickets.closeTicket( ticket_id, ticket_status_id)
+TybTickets.add_ticket( member_id, customer_email, description)
+TybTickets.close_ticket( ticket_id, ticket_status_id)
 ```
 
 A metody pro statistiky:
@@ -82,13 +82,13 @@ class TicketsController < ApplicationController
 
     case params[:commit]
     when 'add_member'
-      TybTickets.addMember(params[:member_email])
+      TybTickets.add_member(params[:member_email])
     when 'add_ticket_status'
-      TybTickets.addTicketStatus(params[:ticket_status_name])
+      TybTickets.add_ticketStatus(params[:ticket_status_name])
     when 'add_ticket'
-      TybTickets.addTicket(params[:member],params[:customer_email],params[:description])
+      TybTickets.add_ticket(params[:member],params[:customer_email],params[:description])
     when 'close_ticket'
-      TybTickets.closeTicket( params[:ticket_id], params[:status_id])
+      TybTickets.close_ticket( params[:ticket_id], params[:status_id])
     when 'set_time_range'
       redirect_to action: :index,
                   from_date: params[:from_date],
