@@ -1,5 +1,5 @@
 # TybTickets
-###Řešení úkolu:
+##Řešení úkolu:
 
 Vytvořte v Ruby knihovnu, která bude sloužit jako backend pro tiketovací systém uživatelské podpory.
 
@@ -13,6 +13,10 @@ Naprogramujte funkce pro zjištění:
 Data uchovávejte v databázi PostgreSQL, pro implementaci můžete použít libovolnou databázovou knihovnu/ORM.
 
 Součástí řešení bude i popis, jak knihovnu použít.
+
+## Simple example application
+[TICKET.TYB.CZ](https://tickets.tyb.cz)
+
 ## Installation
 Add this line to your application's Gemfile:
 
