@@ -94,7 +94,7 @@ class TicketsController < ApplicationController
   end
 
   def index
-    load "tyb_tickets/lib/tyb_tickets.rb"
+    #load "tyb_tickets/lib/tyb_tickets.rb"
 
     @to_date = params[:to_date] ? Time.parse(params[:to_date]) : Time.now
     @from_date = params[:from_date] ? Time.parse(params[:from_date]) : Time.at( @to_date - (60*60*24*30) )
