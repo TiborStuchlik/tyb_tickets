@@ -1,5 +1,5 @@
 # TybTickets
-##Řešení úkolu:
+## Řešení úkolu:
 
 Vytvořte v Ruby knihovnu, která bude sloužit jako backend pro tiketovací systém uživatelské podpory.
 
