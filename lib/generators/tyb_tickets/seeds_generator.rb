@@ -1,7 +1,7 @@
 module TybTickets
   class SeedsGenerator < Rails::Generators::Base
 
-    desc "Initial setting module tyb_tickets"
+    desc "Create some initial data tyb_tickets"
 
     def seed
       create_ticket_statuses
