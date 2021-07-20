@@ -1,4 +1,4 @@
-require "tyb_tickets/version"
+require "tyb_tickets/version.rb"
 require "tyb_tickets/engine"
 #require_relative '../app/models/tyb_tickets/member'
 #require "tyb_tickets/railtie"
