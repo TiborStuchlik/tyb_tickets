@@ -30,10 +30,9 @@ $ bundle
 ```
 ## Setting
 Create migration and migrate
-
-it must be run from the root folder of the plugin
 ```bash
-$ rails g tyb_ticket:install
+$ rails tyb_tickets:install:migrations
+$ rails db:migrate
 ```
 
 Generate some testing data
