@@ -5,7 +5,7 @@ hour_5 = 60 * 60 * 5
 ed = Time.new.to_i
 sd = ed - month_sec
 
-2.times do |n|
+10.times do |n|
 
   d_s = Time.at( sd + rand(month_sec) )
   d_e = Time.at( d_s + rand(hour_5))

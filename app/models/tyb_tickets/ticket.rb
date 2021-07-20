@@ -1,6 +1,5 @@
 module TybTickets
-  ##
-  # A nejaky pokus
+
   class Ticket < ApplicationRecord
     # A relace
     belongs_to :ticket_status, required: false

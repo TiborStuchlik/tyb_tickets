@@ -19,6 +19,7 @@ end
 
 RDoc::Task.new do |rdoc|
   rdoc.main = "README.md"
+  rdoc.rdoc_dir = "html/doc"
   rdoc.rdoc_files.include("README.md", "lib   /*.rb", "app/models/tyb_tickets   /*.rb")
 end
 
